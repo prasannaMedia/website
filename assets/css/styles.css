@@ -185,3 +185,7 @@ portfolio-button {
   color: #fff;
   text-decoration: none;
 }
+
+.contactcard {
+  overflow-x: scroll;
+}
