@@ -8,7 +8,7 @@ export const CTA = () => {
         Download CV
       </a>
       <a href="#contact" className="btn btn-primary">
-        Lets Taik
+        Lets Talk
       </a>
     </div>
   );
