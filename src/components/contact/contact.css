@@ -1,64 +1,64 @@
 .contact__container {
-  width: 58%;
+  width: 68% !important;
   display: grid;
-  grid-template-columns: 30% 58%;
-  gap: 12%;
+  grid-template-columns: 30% 58% !important;
+  gap: 12% !important
 }
 
 .contact__options {
-  display: flex;
-  flex-direction: column;
-  gap: 1.3rem;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.3rem !important;
 }
 
 .contact__option {
-  background: var(--color-bg-variant);
-  padding: 1.2rem;
-  border-radius: 1.2rem;
-  text-align: center;
-  border: 1px solid transparent;
-  transition: var(--transition);
+  background: var(--color-bg-variant) !important;
+  padding: 1.2rem !important;
+  border-radius: 1.2rem !important;
+  text-align: center !important;
+  border: 1px solid transparent !important;
+  transition: var(--transition) !important;
 }
 
 .contact__option:hover {
-  background: transparent;
-  border-color: var(--color-primary-varaint);
+  background: transparent !important;
+  border-color: var(--color-primary-varaint) !important;
 }
 .contact__option-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 .contact__option a {
-  margin-top: 0.7rem;
-  display: inline-block;
-  font-size: 0.8rem;
+  margin-top: 0.7rem !important;
+  display: inline-block !important;
+  font-size: 0.8rem !important;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.2rem !important;
 }
 
 input,
 textarea {
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  background: transparent;
-  border: 2px solid var(--color-bg-variant);
-  resize: none;
-  color: var(--color-white);
+  width: 100% !important;
+  padding: 1.5rem !important;
+  border-radius: 0.5rem !important;
+  background: transparent !important;
+  border: 2px solid var(--color-bg-variant) !important;
+  resize: none !important;
+  color: var(--color-white) !important;
 }
 @media screen and (max-width: 1024px) {
   .contact__container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
   }
 }
 @media screen and (max-width: 600px) {
   .contact__container {
-    width: var(--container-width-sm);
-    gap: 1rem;
+    width: var(--container-width-sm) !important;
+    gap: 1rem !important;
   }
 }

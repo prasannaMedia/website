@@ -11,8 +11,8 @@ export const Contact = () => {
         <div className="contact__options">
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>prasannanaik141@gmail.com</h5>
+            <h5>Email</h5>
+            <p>prasannanaik141@gmail.com</p>
             <a href="mailto:prasannanaik131@gmail.com">Send a message</a>
           </article>
           {/* <article className='contact_option'>

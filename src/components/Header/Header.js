@@ -1,24 +1,114 @@
-import React from 'react'
-import { CTA } from './CTA'
-import ME from '../../assets/dp2.png'
-import { HeaderSocial } from './HeaderSocial'
-import './header.css'
-import { TypedReact } from './TypedReact'
-
+import { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import headerImg from "../../assets/header-img.svg";
+import { ArrowRightCircle } from "react-bootstrap-icons";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
+import "./header.css";
+import cv from '../../assets/cv.pdf'
+import "bootstrap/dist/css/bootstrap.min.css";
 export const Header = () => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const period = 2000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text]);
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(500);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
+    }
+  };
+
   return (
-    <header>
-      <div className='container header__container'>
-        <h5>Hello <span className='emoji'>👋 </span>I am</h5>
-        <TypedReact />
-        {/* <h5 className='text-light'>Frontend Developer</h5> */}
-        <CTA />
-        <HeaderSocial />
-        <div className='me'>
-          <img src={ME} alt='me'></img>
-          <a href='#contact' className='scroll__down' >Scroll Down</a>
-        </div>
-      </div>
-    </header>
-  )
-}
+    <section className="banner" id="home">
+      <Container>
+        <Row className="aligh-items-center">
+          <Col xs={12} md={6} xl={7}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
+                    {`Hi! I'm Prasanna`}{" "}
+                    <span
+                      className="txt-rotate"
+                      dataPeriod="1000"
+                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                    >
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  <p>
+                    I am a passionate programmer with over 4 years of experience
+                    specializing in building dynamic and scalable web
+                    applications using React and Node.js
+                  </p>
+                  <div style={{gap:'10px',display:"flex"}}>
+                  <a href="#contact" className="btn btn-primary">
+                    Lets Talk
+                  </a >
+                  <a href={cv} download className="btn">
+                    Download CV
+                  </a>
+                  </div>
+               
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__zoomIn" : ""
+                  }
+                >
+                  <img src={headerImg} alt="Header Img" />
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};

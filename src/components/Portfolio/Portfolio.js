@@ -6,6 +6,9 @@ import IMG3 from "../../assets/portfolio3.jpg";
 import IMG4 from "../../assets/portfolio4.jpg";
 import IMG5 from "../../assets/portfolio5.png";
 import IMG6 from "../../assets/portfolio6.jpg";
+import ECOMERCEIMG from "../../assets/ecomerce.jpg";
+import EFOOD from "../../assets/efood1.png";
+import NECURITY from '../../assets/necurity.png'
 
 export const Portfolio = () => {
   return (
@@ -53,6 +56,51 @@ export const Portfolio = () => {
         </article> */}
         <article className="portfolio__item">
           <div className="portfolio__item-image">
+            <img src={NECURITY} alt="1"></img>
+          </div>
+
+          <h3>Security dashboard</h3>
+          <div className="portfolio__item-cta">
+            {/* <a
+              href="https://github.com/prasannaMedia/StudentConnector"
+              className="btn"
+            >
+              Github
+            </a> */}
+            <a
+              href="https://necurity-gray.vercel.app/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={ECOMERCEIMG} alt="1"></img>
+          </div>
+
+          <h3>Ecommerce website</h3>
+          <div className="portfolio__item-cta">
+            {/* <a
+              href="https://github.com/prasannaMedia/StudentConnector"
+              className="btn"
+            >
+              Github
+            </a> */}
+            <a
+              href="https://prasannamp.onrender.com/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+  
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
             <img src={IMG3} alt="1"></img>
           </div>
 
@@ -66,6 +114,29 @@ export const Portfolio = () => {
             </a>
             <a
               href="https://evening-cliffs-61590.herokuapp.com/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={EFOOD} alt="1"></img>
+          </div>
+
+          <h3>e-Foodorder</h3>
+          <div className="portfolio__item-cta">
+            {/* <a
+              href="https://github.com/prasannaMedia/StudentConnector"
+              className="btn"
+            >
+              Github
+            </a> */}
+            <a
+              href="https://efoodorder.netlify.app/"
               className="btn btn-primary"
               target="_blank"
             >

@@ -15,11 +15,16 @@
 .portfolio__item:hover{
     background-color: var(--color-primary-varaint);
     background: transparent;
+
 }
 
 .portfolio__item-image{
     border-radius: 1.5rem;
     overflow: hidden;
+    height: 200px; /* Set a fixed height */
+    width: auto; /* Let width adjust to maintain aspect ratio */
+    object-fit: cover; /* Ensures the entire image is visible */
+
 }
 
 .portfolio__item h3{
@@ -30,6 +35,8 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+
+
 }
 
 @media screen and (max-width:1024px){
