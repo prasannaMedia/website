@@ -170,10 +170,10 @@ header {
 
 footer {
   background: var(--color-primary) !important;
-  padding: 3rem 0 !important;
+  padding: 2rem 0 !important;
   text-align: center !important;
-  margin-top: 7rem !important;  
-  font-size: 0.9rem !important;
+  margin-top: 4rem !important;  
+  font-size: 0.85rem !important;
 }
 
 footer a {
@@ -181,9 +181,9 @@ footer a {
 }
 
 .footer_logo {
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
   font-weight: 500 !important;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem !important;
   display: inline-block !important;
 }
 
@@ -191,8 +191,8 @@ footer a {
   display: flex !important;
   justify-content: center !important;
   flex-wrap: wrap !important;
-  gap: 2rem !important;
-  margin: 0 auto 3rem !important;
+  gap: 1.5rem !important;
+  margin: 0 auto 1.5rem !important;
 }
 
 
@@ -201,15 +201,16 @@ footer a {
   display: flex !important;
   justify-content: center !important;
   gap: 1rem !important;
-  margin-bottom: 4rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .footer_social a{
   background: var(--color-bg) !important;
   color: var(--color-white) !important;
-  padding: 0.8rem !important;
-  border-radius: 0.8rem !important;
+  padding: 0.7rem !important;
+  border-radius: 0.7rem !important;
   border: 1px solid transparent !important;
+  font-size: 1.1rem !important;
 }
 
 .footer_social a:hover {
@@ -219,17 +220,31 @@ footer a {
 }
 
 .footer_copyright {
-  margin-bottom: 4rem !important;
+  margin-bottom: 1rem !important;
   color: var(--color-bg) !important;
 }
 
 @media screen and (max-width: 600px) {
   .permalinks {
     flex-direction: column !important;
-    gap: 1.5rem !important;
+    gap: 1rem !important;
   }
 
   .footer_social {
-    margin-bottom: 2.6rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  footer {
+    padding: 1.5rem 0 !important;
+    margin-top: 3rem !important;
+  }
+  
+  .footer_logo {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  .footer_copyright {
+    margin-bottom: 0.5rem !important;
   }
 }

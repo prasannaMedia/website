@@ -1,5 +1,31 @@
 import React from "react";
 import { BsFillPatchCheckFill } from "react-icons/bs";
+import { 
+  FaHtml5, 
+  FaCss3Alt, 
+  FaJs, 
+  FaReact, 
+  FaBootstrap, 
+  FaNodeJs, 
+  FaDatabase, 
+  FaPython, 
+  FaAws, 
+  FaGitAlt,
+  FaServer
+} from "react-icons/fa";
+import { 
+  SiRedux, 
+  SiMui, 
+  SiAntdesign, 
+  SiMongodb, 
+  SiMysql, 
+  SiRedis, 
+  SiVite, 
+  SiWebpack, 
+  SiPostman,
+  SiServerless
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import "./experience.css";
 
 export const Experience = () => {
@@ -12,14 +38,14 @@ export const Experience = () => {
           <h3>Frontend Development</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaHtml5 className="experience__details-icon" />
               <div>
                 <h5>HTML</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaCss3Alt className="experience__details-icon" />
               <div>
                 {" "}
                 <h5>CSS</h5>
@@ -27,42 +53,42 @@ export const Experience = () => {
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaJs className="experience__details-icon" />
               <div>
                 <h5>JavaScript</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaReact className="experience__details-icon" />
               <div>
                 <h5>React</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <SiRedux className="experience__details-icon" />
               <div>
                 <h5>Redux</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaBootstrap className="experience__details-icon" />
               <div>
                 <h5>BootStrap</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <SiMui className="experience__details-icon" />
               <div>
                 <h5>MaterialUI</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <SiAntdesign className="experience__details-icon" />
               <div>
                 <h5>AntD</h5>
                 <small className="text-light">Experienced</small>
@@ -74,63 +100,63 @@ export const Experience = () => {
           <h3>Backend Development</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaNodeJs className="experience__details-icon" />
               <div>
                 <h5>NodeJS</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <SiMongodb className="experience__details-icon" />
               <div>
                 <h5>MongoDB</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <SiMysql className="experience__details-icon" />
               <div>
                 <h5>SQL</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaPython className="experience__details-icon" />
               <div>
                 <h5>Python</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaServer className="experience__details-icon" />
               <div>
                 <h5>MicroService</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaAws className="experience__details-icon" />
               <div>
                 <h5>AWS</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <SiServerless className="experience__details-icon" />
               <div>
                 <h5>Serverless lambda</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <SiRedis className="experience__details-icon" />
               <div>
                 <h5>Redis</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaDatabase className="experience__details-icon" />
               <div>
                 <h5>BullQueue</h5>
                 <small className="text-light">Experienced</small>
@@ -142,21 +168,21 @@ export const Experience = () => {
           <h3>Tools</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <SiVite className="experience__details-icon" />
               <div>
                 <h5>Vite & Webpack</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <FaGitAlt className="experience__details-icon" />
               <div>
                 <h5>Git</h5>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
+              <SiPostman className="experience__details-icon" />
               <div>
                 <h5>Postman</h5>
                 <small className="text-light">Experienced</small>

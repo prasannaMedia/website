@@ -30,11 +30,20 @@
 .experience__details{
     display: flex;
     gap: 1rem;
+    align-items: flex-start;
 }
 
 .experience__details-icon{
     color: var(--color-primary) !important;
     margin-top: 6px !important;
+    font-size: 1.5rem !important;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.experience__details:hover .experience__details-icon {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 8px var(--color-primary));
 }
 @media screen and (max-width:1024px){
 .experience__container{

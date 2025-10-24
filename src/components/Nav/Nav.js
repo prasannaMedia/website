@@ -3,6 +3,7 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { IoStatsChartSharp } from "react-icons/io5";
 import "./nav.css";
 
 export const Nav = () => {
@@ -36,6 +37,15 @@ export const Nav = () => {
         className={activeNav === "#experience" ? "active" : ""}
       >
         <BiBook />
+      </a>
+      <a
+        href="#stats"
+        onClick={() => {
+          setActiveNav("#stats");
+        }}
+        className={activeNav === "#stats" ? "active" : ""}
+      >
+        <IoStatsChartSharp />
       </a>
       <a
         href="#services"

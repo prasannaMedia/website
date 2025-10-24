@@ -8,6 +8,8 @@ import { Services } from './components/Services/Services'
 import { Portfolio } from './components/Portfolio/Portfolio'
 import { Contact } from './components/contact/Contact'
 import { Footer } from './components/Footer/Footer'
+import { Stats } from './components/Stats/Stats'
+import { LinkedIn } from './components/LinkedIn/LinkedIn'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Nav />
       <About />
       <Experience />
+      <Stats />
+      <LinkedIn />
       {/* <Services /> */}
       <Portfolio />
       <Contact />
