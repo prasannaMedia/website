@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.3cc021d6.css",
-    "main.js": "/website/static/js/main.e1d0c5db.js",
+    "main.js": "/website/static/js/main.6ad56a04.js",
     "static/js/787.1f11dfe9.chunk.js": "/website/static/js/787.1f11dfe9.chunk.js",
     "static/media/efood1.png": "/website/static/media/efood1.5a1dcbdb2b9ebb9d78ce.png",
     "static/media/necurity.png": "/website/static/media/necurity.1d892a9e88e09c5dd12d.png",
@@ -11,18 +11,18 @@
     "static/media/portfolio5.png": "/website/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
     "static/media/header-img.svg": "/website/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/portfolio6.jpg": "/website/static/media/portfolio6.72d1107e313049cf15a7.jpg",
-    "static/media/cv.pdf": "/website/static/media/cv.0a30999bd85d34202f24.pdf",
+    "static/media/cv.pdf": "/website/static/media/cv.a75113ebffc3634c70cf.pdf",
     "static/media/ecomerce.jpg": "/website/static/media/ecomerce.9df4e1f51d89f01623ad.jpg",
     "static/media/portfolio3.jpg": "/website/static/media/portfolio3.cbab42559fe73e73906f.jpg",
     "static/media/portfolio4.jpg": "/website/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
     "static/media/logo.svg": "/website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/website/index.html",
     "main.3cc021d6.css.map": "/website/static/css/main.3cc021d6.css.map",
-    "main.e1d0c5db.js.map": "/website/static/js/main.e1d0c5db.js.map",
+    "main.6ad56a04.js.map": "/website/static/js/main.6ad56a04.js.map",
     "787.1f11dfe9.chunk.js.map": "/website/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cc021d6.css",
-    "static/js/main.e1d0c5db.js"
+    "static/js/main.6ad56a04.js"
   ]
 }
