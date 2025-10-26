@@ -127,3 +127,20 @@
   .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
   }
+
+  /* Mobile spacing fix */
+@media screen and (max-width: 600px) {
+  .banner .aligh-items-center > div:last-child {
+    margin-top: 2rem !important;
+  }
+  
+  .banner img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .banner .aligh-items-center {
+    gap: 2rem;
+  }
+}
