@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { FaLinkedin, FaExternalLinkAlt, FaCalendarAlt, FaEye } from 'react-icons/fa';
 import { BiLike, BiComment } from 'react-icons/bi';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './linkedin.css';
 
 export const LinkedIn = () => {
@@ -58,6 +61,35 @@ const articles = [
     return new Date(dateString).toLocaleDateString('en-US', options);
   };
 
+  // Slider settings
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      }
+    ]
+  };
+
   return (
     <section id="linkedin">
       <h5>My Professional Content</h5>
@@ -104,44 +136,48 @@ const articles = [
         {/* Posts Section */}
         <div className="linkedin__articles">
           <h3 className="linkedin__section-title">Featured Posts</h3>
-          <div className="linkedin__articles-grid">
-            {articles.map((article) => (
-              <article key={article.id} className="linkedin__article-card">
-                <div className="linkedin__article-image">
-                  <img src={article.image} alt={article.title} />
-                  <div className="linkedin__article-overlay">
-                    <a 
-                      href={article.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="linkedin__read-more"
-                    >
-                      View Post <FaExternalLinkAlt />
-                    </a>
-                  </div>
+          <div className="linkedin__slider">
+            <Slider {...sliderSettings}>
+              {articles.map((article) => (
+                <div key={article.id} className="linkedin__article-wrapper">
+                  <article className="linkedin__article-card">
+                    <div className="linkedin__article-image">
+                      <img src={article.image} alt={article.title} />
+                      <div className="linkedin__article-overlay">
+                        <a 
+                          href={article.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="linkedin__read-more"
+                        >
+                          View Post <FaExternalLinkAlt />
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div className="linkedin__article-content">
+                      <div className="linkedin__article-date">
+                        <FaCalendarAlt /> {formatDate(article.date)}
+                      </div>
+                      
+                      <h4>{article.title}</h4>
+                      <p>{article.description}</p>
+                      
+                      <div className="linkedin__article-footer">
+                        <a 
+                          href={article.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="linkedin__view-post-btn"
+                        >
+                          View on LinkedIn
+                        </a>
+                      </div>
+                    </div>
+                  </article>
                 </div>
-                
-                <div className="linkedin__article-content">
-                  <div className="linkedin__article-date">
-                    <FaCalendarAlt /> {formatDate(article.date)}
-                  </div>
-                  
-                  <h4>{article.title}</h4>
-                  <p>{article.description}</p>
-                  
-                  <div className="linkedin__article-footer">
-                    <a 
-                      href={article.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="linkedin__view-post-btn"
-                    >
-                      View on LinkedIn
-                    </a>
-                  </div>
-                </div>
-              </article>
-            ))}
+              ))}
+            </Slider>
           </div>
         </div>
 

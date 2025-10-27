@@ -19,9 +19,9 @@ function App() {
       <About />
       <Experience />
       <Stats />
+      <Portfolio />
       <LinkedIn />
       {/* <Services /> */}
-      <Portfolio />
       <Contact />
       <Footer />
     </div>
