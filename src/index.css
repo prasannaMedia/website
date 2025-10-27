@@ -53,19 +53,21 @@ h1 {
 }
 
 section {
-  margin-top: 8rem !important;
+  margin-top: 5rem !important;
+  padding: 0 1rem !important;
 }
 
 section > h1,
 section > h5 {
   text-align: center !important;
   color: var(--color-light) !important;
+  margin-bottom: 0.5rem !important;
 }
 
 section > h2 {
   text-align: center;
   color: var(--color-primary) !important;
-  margin-bottom: 3rem !important;
+  margin-bottom: 2.5rem !important;
 }
 
 .text-light {
@@ -111,25 +113,20 @@ img {
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md) !important;
+    padding: 0 1.5rem !important;
   }
+  
   section {
-    margin-top: 6rem !important;
+    margin-top: 4rem !important;
+    padding: 0 1rem !important;
   }
+  
+  section > h2 {
+    margin-bottom: 2rem !important;
+  }
+  
   header {
     height: 68vh !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    width: var(--container-width-sm) !important;
-  }
-  section > h2 {
-    margin-top: 2rem !important;
-  }
-  .header__socials,
-  .scroll__down {
-    display: none !important;
   }
 }
 
@@ -138,10 +135,12 @@ header {
   padding-top: 7rem;
   overflow: hidden;
 }
+
 .header__container {
   text-align: center;
   height: 100%;
   position: relative;
+  padding: 0 1rem;
 }
 
 .cta {
@@ -149,6 +148,7 @@ header {
   display: flex;
   gap: 1.2rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .header__socials {
@@ -172,7 +172,7 @@ footer {
   background: var(--color-primary) !important;
   padding: 2rem 0 !important;
   text-align: center !important;
-  margin-top: 4rem !important;  
+  margin-top: 5rem !important;  
   font-size: 0.85rem !important;
 }
 
@@ -224,56 +224,7 @@ footer a {
   color: var(--color-bg) !important;
 }
 
-@media screen and (max-width: 600px) {
-  .permalinks {
-    flex-direction: column !important;
-    gap: 1rem !important;
-  }
-
-  .footer_social {
-    margin-bottom: 1.5rem !important;
-  }
-  
-  footer {
-    padding: 1.5rem 0 !important;
-    margin-top: 3rem !important;
-  }
-  
-  .footer_logo {
-    font-size: 1.3rem !important;
-    margin-bottom: 0.8rem !important;
-  }
-  
-  .footer_copyright {
-    margin-bottom: 0.5rem !important;
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-  header {
-    height: auto !important; /* Change from 68vh to auto */
-    min-height: 100vh !important;
-    padding: 5rem 1rem 3rem !important; /* Add horizontal padding */
-  }
-  
-  .header__container {
-    padding: 0 1rem !important;
-  }
-  
-  .cta {
-    flex-direction: column !important; /* Stack buttons vertically */
-    align-items: center !important;
-    width: 100% !important;
-  }
-  
-  .btn {
-    width: 100% !important;
-    max-width: 300px !important; /* Prevent buttons from being too wide */
-  }
-}
-
-
+/* Mobile Optimizations - Consolidated */
 @media screen and (max-width: 600px) {
   /* Global fixes */
   body {
@@ -293,28 +244,43 @@ footer a {
     padding: 5rem 1rem 3rem !important;
   }
   
+  .header__container {
+    padding: 0 !important;
+  }
+  
   .cta {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 1rem !important;
   }
   
   .btn {
-    width: 100% !important;
-    max-width: 300px !important;
+    min-width: 140px !important;
+    padding: 0.7rem 1rem !important;
+    font-size: 0.9rem !important;
   }
   
   /* Section spacing */
+  section {
+    margin-top: 3rem !important;
+    padding: 0 0.5rem !important;
+  }
+  
   section > h2 {
-    margin-top: 2rem !important;
-    padding: 0 1rem !important;
+    margin-bottom: 1.5rem !important;
+    font-size: 1.5rem !important;
+    padding: 0 !important;
+  }
+  
+  section > h5 {
+    font-size: 0.85rem !important;
   }
   
   /* Footer fixes */
   footer {
     padding: 1.5rem 1rem !important;
     margin-top: 3rem !important;
-    text-align: center !important;
   }
   
   .permalinks {
@@ -340,5 +306,28 @@ footer a {
   .header__socials,
   .scroll__down {
     display: none !important;
+  }
+}
+
+/* Very Small Screens (< 400px) */
+@media screen and (max-width: 400px) {
+  section {
+    margin-top: 2.5rem !important;
+    padding: 0 0.25rem !important;
+  }
+  
+  section > h2 {
+    font-size: 1.3rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+  
+  .container {
+    padding: 0 0.75rem !important;
+  }
+  
+  .btn {
+    min-width: 120px !important;
+    padding: 0.6rem 0.8rem !important;
+    font-size: 0.85rem !important;
   }
 }
