@@ -10,6 +10,7 @@
 
 .portfolio__item-wrapper {
     padding: 0 0.5rem;
+    min-width: 280px;
 }
 
 .portfolio__item{
@@ -114,6 +115,7 @@
     
     .portfolio__item-wrapper {
         padding: 0 0.25rem;
+        min-width: 100%;
     }
     
     .portfolio__item {
