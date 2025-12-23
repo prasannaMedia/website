@@ -115,7 +115,6 @@
 .linkedin__article-wrapper {
   padding: 0 0.5rem;
   height: 100%;
-  min-width: 260px;
 }
 
 .linkedin__article-card {
@@ -325,7 +324,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #linkedin {
     padding: 3rem 0;
   }

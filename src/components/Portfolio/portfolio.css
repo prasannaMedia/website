@@ -10,7 +10,6 @@
 
 .portfolio__item-wrapper {
     padding: 0 0.5rem;
-    min-width: 280px;
 }
 
 .portfolio__item{
@@ -108,7 +107,7 @@
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:768px){
     .portfolio__container{
         padding: 0 0.5rem;
     }
